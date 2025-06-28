@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import "tailwindcss";
+
+*{
+  font-family: Outfit;
+}
+@layer utilities {
+    .bg-primary {
+      background-color: #5f6FFF; /* Custom Primary Blue */
+    }
+    .text-primary{
+      color: #5f6FFF; /* Custom Primary Blue */
+    }
+    .border-primary{
+      border-color: #5f6FFF; /* Custom Primary Blue */
+    }
+  }
+
+.active hr{
+    @apply block
+}
+::-webkit-scrollbar{
+  @apply hidden
+}
+
+/* #5f6FFF */
+@media (max-width:740px){
+  .active p{
+    @apply text-white bg-[#5f6FFF]
+  }
+}
